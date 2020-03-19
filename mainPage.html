@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swarali</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="styleWebsite.css"/>
+</head>
+    
+<body class="fullPage">
+    <div class="slide-box" id="slide-box">
+    <h1 >Welcome!!</h1>
+        <h1>Hope you will LIKE my website! :)</h1>
+    </div>
+    <div class="mainPage" >
+        <div class="green-border">
+        <header>
+            
+            <div class="blue-border">
+        <center>
+        <h1 style="margin: 0%; font-family: MV Boli; font-size: 25px;" >SAP</h1></center> 
+        <center><h1 style=" margin: 0%; font-family: MV Boli; font-size: 25px;" >Swarali Abhay Purandare</h1></center></div></header></div>
+        <div class="table">
+        <span class="imageBrain" id="rect">
+              
+        <center><span><a href="#LeftSide" target="_self" >
+    <img src="brainleft.jpg" height="400px" class="left">
+    </a></span>
+    <span><a href="#RightPage" target="_self" >
+    <img src="brainright.jpg" height="400px" class="right">
+    </a></span></center>
+            <center><h2 style="color:floralwhite">Click on any side.</h2></center></span>
+            <span class="dropdown">
+                <span style="color: aliceblue; font-size: 20px;">About me </span>
+                <div class="dropdown-content">
+                    <p >Hi there!I am currently pursuing B.Tech EnTC second year from VIT Pune.I am very much interested in Web and android application development.</p>
+                </div>
+                </span>
+        
+       
+            </div>
+   </div>
+   
+    
+    <div class="rightPage" id="RightPage">
+        <center><h2>Click on the image</h2></center>
+   
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+      <a href=SUB2dance.html target="_self">
+    <img src="bharatnatyam.png" style="width:100%">
+    <div class="text"><h2>Bharatnatyam</h2></div>
+    </a>
+  </div>
+    <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+      <a href="SUB2drawings.html" target="_self">
+    <img src="art.jpg" style="width:100%">
+    <div class="text"><h2>Art</h2></div>
+    </a>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+      <a href="SUB2music.html" target="_self">
+    <img src="harmonium.png" style="width:100%">
+    <div class="text"><h2>Harmonium</h2></div>
+          </a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+        
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </div>
+    
+    <hr>
+    <hr>
+    <div class="LeftSide" id="LeftSide">
+    <center><h3>My acheivements in Kendriya Vidyalaya</h3></center>
+   <span> <h4>My 10th marks : 93%</h4></span>
+    <span> <h4>My 12th marks : 89%</h4></span>
+    <center><h3>My acheivements in VIT</h3></center>
+        </div>
+    
+      <center><h2>Connect with me elsewhere</h2></center>
+    <center><a href="https://instagram.com/purandareswarali?igshid=8fpti5fn0ehd">
+        <img src="instagram_logo.png" height="50px"></a>
+   <a href="#">
+        <img src="icon_linkedin.png" height="50px"></a></center>
+    
+</body>
+    <script>
+var slideBox = document.getElementById('slide-box');
+
+setTimeout(function(){
+    slideBox.style.display = 'none';
+}, 5000); </script>
+</html>
+
+
+

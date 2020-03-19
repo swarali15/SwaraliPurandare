@@ -1,0 +1,268 @@
+
+
+.slide-box{
+    animation: wel 5s linear forwards ;
+    animation-iteration-count: 1;
+    text-align: center;
+    height: 100%;
+    color: aqua;
+    background: linear-gradient(-45deg, #390ced, #de73f2, #09e6a2, #07f5da);
+	}
+    
+
+@keyframes wel{
+    0%{background-position: 0% 50%
+        height: 50%;
+        text-align: center;
+        font-family: cursive;
+        text-indent: inherit;
+        font-size: 25px;
+        margin-top: 50%;
+        background-position: center;
+        top:0%;
+        transform: scale(0.8);
+    }
+    50%{
+        background-position: 100% 50%
+        height: 100%;
+        font-family: cursive;
+        font-size: 30px;
+        margin-top: 50%;
+        font-size: 50px;
+        font-style: bold;
+        background-position: center;
+        top:50%;
+       text-align: center;
+        transform:  scale(1.1);
+    }
+    70%{ background-position: 0% 50%
+        height:0%;
+         opacity: 1;
+        font-family: cursive;
+        font-size: 90px;
+         background-position: center;
+         top:100%;
+         text-indent: inherit;
+         text-align:center;}
+     100%{
+        background-position: 0% 50%
+        height:0%;
+         opacity: 0;
+         display: none;
+        font-family: cursive;
+        font-size: 25px;
+         background-position: center;
+         top:100%;
+         text-indent: inherit;
+         text-align:center;
+         transform: scale(1.3);
+         
+    }
+}
+
+header{
+    border: 3px;
+    border-style:ridge;
+    
+}
+.green-border{
+    margin: 3px;
+    border-color: greenyellow;
+    border-width: 1px;
+    border-style: ridge;
+}
+.blue-border{
+    margin:3px;
+    border-color: blue;
+    border-width: 1px;
+    border-style: ridge;
+}
+
+
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.019);
+    }
+    100% {
+        transform: scale(1);
+    }
+} 
+.left {
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+    animation-fill-mode: forwards;
+}
+.right {
+    animation: blink normal 4s infinite ease-in-out; /* Opera and prob css3 final iteration */
+    animation-fill-mode: forwards;
+}
+h1{font-size: 20px;
+color: azure;}
+h2{color: azure;
+font-size:15px;
+font-family:sovinier; }
+.SAP{
+    background-color:aliceblue;
+    border-bottom-color: aliceblue;
+    border-bottom-width: thick;
+    color:white;
+    font-family:serif;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+.imageBrain{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+.fullPage{background: linear-gradient(35deg,  #CCFFFF , #FFCCCC);
+background: linear-gradient(-45deg, #03010b, #a2b534, #2ead86, #e61d6b);
+	background-size: 400% 400%;
+	animation: Gradient 5s ease infinite;}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.mainPage{
+height: 100%;
+    
+    bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.h3{
+    font-family: cursive;
+    font-size: 30px;
+    color: azure;
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+#rect {
+  animation-name: rainbow;
+  animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    .img{transform: scale(1.2);}
+}
+
+.left:hover{
+    transform: scale(1.3);
+    border: 2px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    border-style:solid;
+    border-color: #e1fa20;
+    transition: transform ease-in 0.5s, box-shadow ease-in 0.25s;
+  box-shadow: 0 20px 25px rgb(59, 67, 78);
+    
+    
+}
+.right:hover{
+    transform: scale(1.3);
+    border: 2px;
+    backface-visibility: hidden;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+    border-style:solid;
+     border-color: #e1fa20;
+    transition: transform ease-in 0.5s, box-shadow ease-in 0.25s;
+  box-shadow: 0 20px 25px  rgb(59, 67, 78);
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #0433f8;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #3f0ead;
+  font-size: 25px;
+  padding: 8px 12px;
+  position:relative;
+  bottom: 7px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
